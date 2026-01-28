@@ -1,4 +1,5 @@
 from .manager import LibraryManager
+from .version import __version__
 from .exceptions import (
     LibraryManagerError,
     BackupError,
@@ -10,6 +11,5 @@ __all__ = [
     "LibraryManagerError",
     "BackupError",
     "RestoreError",
+    "__version__"
 ]
-
-__version__ = "1.0.0"

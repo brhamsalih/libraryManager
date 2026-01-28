@@ -135,13 +135,3 @@ class LibraryManager:
     def get_name(path: str) -> str:
         filename = LibraryManager.get_filename(path)
         return filename.rsplit(".", 1)[0]
-    
-lm = LibraryManager("data/")
-# lm.make_dir("data/new_folder")
-# lm.copy_file_to("file.txt", "data/new_folder")
-# lm.backup()
-# lm.restore()
-
-# lm.copy_file_to("main.py","data")
-# lm._copy_file("main.py","data/ota.py")
-

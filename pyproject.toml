@@ -3,13 +3,23 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "libraryManager"
+name = "esp32-librarymanager"
 version = "1.0.0"
-description = "Comprehensive directory & file manager with backup/restore and FS tools"
-authors = [{ name = "Ibrahim Salih" }]
+description = "Comprehensive directory & file manager with backup/restore and FS tools for ESP32 running MicroPython"
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.8"
+authors = [
+  { name = "Ibrahim Salih" }
+]
+keywords = ["micropython", "esp32", "wifi", "iot"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
 
 [project.urls]
 Homepage = "https://github.com/brhamsalih/libraryManager"
